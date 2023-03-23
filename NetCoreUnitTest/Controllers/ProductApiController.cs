@@ -18,6 +18,7 @@ namespace NetCoreUnitTest.Controllers
 
         public ProductApiController(IRepository<Product> repository)
         {
+           
             _repository = repository;
         }       
 

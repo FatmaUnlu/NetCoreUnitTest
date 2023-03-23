@@ -17,9 +17,10 @@ namespace NetCOreUnitTest.Test
         private List<Product> products;
         public ProductApiControllerTest()
         {
+
             _mockRepo = new Mock<IRepository<Product>>();
             _productApiController = new ProductApiController(_mockRepo.Object);
-            products = new List<Product>() { new Product { Id = 1, Name = "Kitap", Price=10, Stock=100, Color = "mavi"}, new Product { Id = 3, Name = "Bardak", Price = 16, Stock = 70, Color = "sarý" }, new Product { Id = 4, Name = "Usb", Price = 100, Stock = 100, Color = "mavi" } };  
+            products = new List<Product>() { new Product { Id = 1, Name = "Kitap", Price = 10, Stock = 100, Color = "mavi" }, new Product { Id = 3, Name = "Bardak", Price = 16, Stock = 70, Color = "sarý" }, new Product { Id = 4, Name = "Usb", Price = 100, Stock = 100, Color = "mavi" } };
         }
 
         [Fact]
